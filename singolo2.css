@@ -122,4 +122,9 @@
 	height: 31px;
 	border-radius: 16px;
 	border: 1px solid #666d89;
+	cursor: pointer;
+}
+
+.media__link:hover{
+	box-shadow: 0px 0px 17px -1px rgba(102,109,137,1);
 }
