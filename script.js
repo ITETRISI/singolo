@@ -14,11 +14,14 @@ class NavigationBar {
 		let currentPosition = window.scrollY
 		let anchors = document.querySelectorAll('.wrapper > a');
 		let links = document.querySelectorAll('.header__list_item a')
-		anchors.forEach( element => {
+		
+		anchors.forEach(element => {
 			let section = document.querySelector(`.${element.id}`)
-			if(element.offsetTop-2 < currentPosition && (element.offsetTop + section.offsetHeight) > currentPosition){
+			if ((window.innerHeight + window.scrollY + 2) >= document.body.offsetHeight) {
+				NavigationBar.activeElement(links[links.length-1], links)
+			} else if (element.offsetTop - 2 < currentPosition && (element.offsetTop + section.offsetHeight) > currentPosition) {
 				links.forEach((a) => {
-					if(element.id === a.getAttribute('href').slice(1)){
+					if (element.id === a.getAttribute('href').slice(1)) {
 						NavigationBar.activeElement(a, links)
 					}
 				})
@@ -34,7 +37,7 @@ document.querySelectorAll('.portfolio__switcher-item').forEach((element, i, arra
 	NavigationBar.switchTab()
 }))
 
-document.addEventListener('scroll' ,NavigationBar.onScroll)
+document.addEventListener('scroll', NavigationBar.onScroll)
 
 
 
