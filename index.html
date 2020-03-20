@@ -12,36 +12,52 @@
 		<header class="header">
 			<h1 class="header__logo">SINGOLO<span class="header__logo-star">*</span></h1>
 			<ul class="header__list">
-				<li class="header__list_item">HOME</li>
-				<li class="header__list_item">SERVICES</li>
-				<li class="header__list_item">PORTFOLIO</li>
-				<li class="header__list_item">ABOUT</li>
-				<li class="header__list_item">CONTACT</li>
+				<li class="header__list_item"><a class="active" href="#home">HOME</a></li>
+				<li class="header__list_item"><a href="#services">SERVICES</a></li>
+				<li class="header__list_item"><a href="#portfolio">PORTFOLIO</a></li>
+				<li class="header__list_item"><a href="#about">ABOUT</a></li>
+				<li class="header__list_item"><a href="#quote">CONTACT</a></li>
 			</ul>
 		</header>
-		<div class="slider">
+		<a class="anchor" id="home"></a>
+		<div class="slider home">
 			<button class="slider__btn arrow-left">
 				<img src="assets/img/chev.svg" alt="arrow" width="16" height="27">
 			</button>
-			<div class="slider__phone">
-				<img class="slider__phone-vertical" src="assets/img/verticaltelephone.svg" width="240" height="483" alt="iPhone Horizontal">
-				<img class="slider__phone-horizontal" src="assets/img/telephone.svg" width="483" height="240" alt="iPhone Horizontal">
+			<div class="slider__slides">
+				<div class="slider__slides-slide">
+				<img src="assets/img/Slide-1.jpg"  alt="iPhone Horizontal">
+				<div class="phone__vertical phone">
+					<div class="phone__vertical-display"></div>
+				</div>
+				<div class="phone__horizontal phone">
+					<div class="phone__horizontal-display"></div>
+				</div>
+				</div>
+				<div class="slider__slides-slide">
+				<img src="assets/img/Slide-2.jpg"  alt="iPhone Horizontal">
+				<div class="phone__vertical central__phone phone">
+					<div class="central__phone-display"></div>
+				</div>
+				</div>
 			</div>
 			<button class="slider__btn arrow-right">
 				<img src="assets/img/chev (1).svg" alt="arrow" width="16" height="27">
+				<div class="slide-vertical"></div>
 			</button>
 		</div>
+		<a class="anchor" id="services"></a>
 		<div class="services">
-			<div class="sevices__info">
-				<h2 class="sevices__info-title">Our Services</h2>
-				<p class="sevices__info-text">
+			<div class="services__info">
+				<h2 class="services__info-title">Our Services</h2>
+				<p class="services__info-text">
 					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, 
 					non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
 					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
 				</p>
 			</div>
-			<div class="sevices__collection">
-				<div class="sevices__collection-item">
+			<div class="services__collection">
+				<div class="services__collection-item">
 					<div class="item__circle">
 						<img src="assets/img/pen.svg" width="35" height="35" alt="pen">
 					</div>
@@ -53,7 +69,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="sevices__collection-item">
+				<div class="services__collection-item">
 					<div class="item__circle">
 						<img src="assets/img/bulb.svg" width="35" height="35" alt="pen">
 					</div>
@@ -64,7 +80,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="sevices__collection-item">
+				<div class="services__collection-item">
 					<div class="item__circle">
 						<img src="assets/img/heart.svg" width="35" height="35" alt="pen">
 					</div>
@@ -75,7 +91,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="sevices__collection-item">
+				<div class="services__collection-item">
 					<div class="item__circle">
 						<img src="assets/img/phone.svg" width="35" height="35" alt="pen">
 					</div>
@@ -86,7 +102,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="sevices__collection-item">
+				<div class="services__collection-item">
 					<div class="item__circle">
 						<img src="assets/img/bubble.svg" width="35" height="35" alt="pen">
 					</div>
@@ -97,7 +113,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="sevices__collection-item">
+				<div class="services__collection-item">
 					<div class="item__circle">
 						<img src="assets/img/star.svg" width="35" height="35" alt="pen">
 					</div>
@@ -110,7 +126,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="portfolio">
+		<a class="anchor" id="portfolio"></a>
+		<div class="portfolio" >
 			<h2 class="portfolio__title">Portfolio</h2>
 			<p class="portfolio__paragraph">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
 			<ul class="portfolio__switcher">
@@ -134,6 +151,7 @@
 				<img src="assets/img/12.jpg" width="220" height="188" alt="">
 			</div>
 		</div>
+		<a class="anchor" id="about"></a>
 		<div class="about">
 			<h2 class="about__title">About Us</h2>
 			<p class="about__paragraph">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -173,17 +191,24 @@
 				</div>
 			</div>
 		</div>
+		<a class="anchor" id="quote"></a>
 		<div class="quote">
 			<h2 class="quote__title">Get a Quote</h2>
 			<p class="quote__paragraph">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 			<div class="quote__forms">
-				<form class="quote__forms-inputs">
-					<input type="text" class="inputs" placeholder="Name(Required)" © Copyright 2013 · by PSDchat.com="^[a-zA-Z]+$">
-					<input type="email" class="inputs" placeholder="Email (Required)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$">
-					<input type="text" class="inputs" placeholder="Subject">
-					<textarea class="inputs text-area" placeholder="Describe your project in detail..."></textarea>
+				<form class="quote__forms-inputs" >
+					<input type="text" class="inputs" id="text" placeholder="Name(Required)" pattern="^[a-zA-Z]+$" required>
+					<input type="email" class="inputs" id="email" placeholder="Email (Required)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+					<input type="text" class="inputs" id="theme" placeholder="Subject">
+					<textarea class="inputs text-area" id="description" placeholder="Describe your project in detail..." maxlength="15"></textarea>
 					<input type="submit" class="inputs submit" value="Submit">
 				</form>
+				<div class="forms__info">
+					<span class="forms__info-satus">Письмо отправлено</span>
+					<span class="forms__info-theme"></span>
+					<span class="forms__info-description"></span>
+					<button class="inputs submit forms__info-btn">OK</button>
+				</div>
 				<div class="quote__forms-info">
 					<span class="info__title">Contact Information</span>
 					<p class="info__paragraph">Quisque hendrerit purus dapibus, ornare nibh vitae, viver- ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
@@ -214,5 +239,6 @@
 			</div>
 		</footer>
 	</div>
+	<script src="script.js"></script>
 </body>
 </html>
