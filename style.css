@@ -737,6 +737,13 @@ a.anchor {
 		height: 71px;
 	}
 
+	a.anchor {
+		display: block;
+		position: relative;
+		top: -71px;
+		visibility: hidden;
+	} 
+
 	.header__logo {
 		position: static;
 		transition: 0.5s;
