@@ -1,2 +1,1 @@
-#singolo
-[https://itetrisi.github.io/singolo/](https://itetrisi.github.io/singolo/)
+# [singolo](https://itetrisi.github.io/singolo/)
